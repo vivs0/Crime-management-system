@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F64158C-1717-4DD4-BFA5-101E14D2165D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrimeManagementSystem</RootNamespace>
+    <AssemblyName>CrimeManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="core">
+      <HintPath>..\core\bin\Debug\core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRecord.Designer.cs">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegistration.Designer.cs">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="demo.Designer.cs">
+      <DependentUpon>demo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIRDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIRDetail.Designer.cs">
+      <DependentUpon>FIRDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIR_dbDataSet.cs">
+      <DependentUpon>FIR_dbDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FIR_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FIR_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="status.cs" />
+    <Compile Include="SuperAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin.Designer.cs">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUpdate.Designer.cs">
+      <DependentUpon>ViewUpdate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddRecord.resx">
+      <DependentUpon>AddRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegistration.resx">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="demo.resx">
+      <DependentUpon>demo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIRDetail.resx">
+      <DependentUpon>FIRDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperAdmin.resx">
+      <DependentUpon>SuperAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewUpdate.resx">
+      <DependentUpon>ViewUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="FIR_dbDataSet.xsc">
+      <DependentUpon>FIR_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FIR_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FIR_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FIR_dbDataSet.xss">
+      <DependentUpon>FIR_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\contentLibrary\contentLibrary.csproj">
+      <Project>{74ddf646-2522-44d7-84cc-6e9ac2c37c67}</Project>
+      <Name>contentLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnglishLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
